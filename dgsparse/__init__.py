@@ -5,7 +5,7 @@ import torch
 
 __version__ = "0.1"
 
-for library in ["_spconv", "_spmm"]:
+for library in ["_spconv", "_spmm", "_convert"]:
     cuda_spec = importlib.machinery.PathFinder().find_spec(
         f"{library}_cuda", [osp.dirname(__file__)]
     )

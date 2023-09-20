@@ -411,3 +411,5 @@ std::vector<torch::Tensor> csr2csc_cuda(torch::Tensor csrRowPtr,
                 cscVal.data_ptr<float>());
   return {cscColPtr, cscRowInd, cscVal};
 }
+
+
